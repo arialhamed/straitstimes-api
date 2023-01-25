@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#this should be ran from update.py
+
 if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
 	dt=$(date '+%d-%b-%Y %H:%M:%S');
 	echo "creating commit on \"$dt\""
@@ -7,7 +9,6 @@ if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
 	if [ -n "$1" ]; then
 	   	ms=": $1"
 	fi
-	python csv.py
 	git pull && git add . && git commit -m "$dt$ms" && git push
 else
 	find `pwd` -type f -size +100M ! -path '*/.git/*'
