@@ -5,7 +5,7 @@ this is a fake API for client-side javascript. more details in README.md
 
 oh wait this is the README.md
 
-Yeah so this repo is basically a very lackluster, bs, unreliable, manual, lazy, and poor way to implement some sort of API for me to connect to [Straits Times's sitemap](https://straitstimes.com/sitemap.xml). All I need to do is to run `update.py` in my own local repo once in a while so that all the latest links would be fed to the `csv` files. In some way this is a backup repo for straitstimes.com/sitemap.xml's links haha
+Yeah so this repo is basically a very lackluster, bs, unreliable, manual, lazy, and poor way to implement some sort of API for me to connect to [Straits Times's sitemap](https://straitstimes.com/sitemap.xml). All I need to do is to run `csv.py` in my own local repo once in a while so that all the latest links would be fed to the `csv` files. In some way this is a backup repo for straitstimes.com/sitemap.xml's links haha
 
 The reason why I resorted to doing this for client-side javascript is because I couldn't do any of the following options:
 - Client-side javascript cannot read from the sitemap directly because of The Same Origin Policy 
