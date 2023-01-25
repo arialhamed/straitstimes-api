@@ -58,4 +58,5 @@ print()
 #os.system(f'mv \"{full_raw_name}\"  \"[{ctime[4]}-{months[ctime[1]]}-{ctime[2].zfill(2)}_{ctime[3].replace(":","-")}]_{ifile}\"')
 
 os.system("notify-send \"straitstimes.com/sitemap.xml scraping is complete\" \"update.py found in `pwd`\"")
-os.system("bash repospec.sh")
+#os.system("bash repospec.sh")
+os.system("git pull && git add . && git commit -m {time.time()} && git push")
