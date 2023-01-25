@@ -7,6 +7,7 @@ if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
 	if [ -n "$1" ]; then
 	   	ms=": $1"
 	fi
+	python3 csv.py
 	git pull && git add . && git commit -m "$dt$ms" && git push
 else
 	find `pwd` -type f -size +100M ! -path '*/.git/*'

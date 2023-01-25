@@ -10,7 +10,8 @@ df = pd.DataFrame()
 # get how much pages are there in straitstimes.com/sitemap.xml
 total_sitemap_pages = len([x for x in BeautifulSoup(urlopen("https://www.straitstimes.com/sitemap.xml"),'lxml').get_text().split('\n') if "page=" in x])
 
-full_raw_name = f"{os.getcwd()}/straitstimes_sitemap.xml_full-raw.csv"
+#full_raw_name = f"{os.getcwd()}/straitstimes_sitemap.xml_full-raw.csv"
+full_raw_name = "../tfjs-aap/assets/stnews.csv"
 
 if not(os.path.isfile(full_raw_name)):
 	for i in range(total_sitemap_pages):
